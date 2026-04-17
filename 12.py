@@ -4,7 +4,7 @@ PINK = "salmon"
 BLUE = "lightblue"
 DARK_BLUE = "navy"
 
-
+# рисует закрашенный треугольник по трем точкам
 def triangle(x1, y1, x2, y2, x3, y3, color):
     turtle.up()
     turtle.goto(x1, y1)
@@ -18,6 +18,7 @@ def triangle(x1, y1, x2, y2, x3, y3, color):
     turtle.end_fill()
 
 
+# рисует квадрат, повёрнутый на 45 градусов (ромб)
 def square(cx, cy, s, color, border=None):
     turtle.up()
     turtle.goto(cx, cy + s)
@@ -32,6 +33,7 @@ def square(cx, cy, s, color, border=None):
     turtle.end_fill()
 
 
+# рисует закрашенный круг
 def circle(cx, cy, radius, color):
     turtle.up()
     turtle.goto(cx, cy - radius)
@@ -42,6 +44,7 @@ def circle(cx, cy, radius, color):
     turtle.end_fill()
 
 
+# рисует один орнамент (узор) с центром в точке (cx, cy)
 def ornament(cx, cy):
     s = 60
 
@@ -63,6 +66,7 @@ def ornament(cx, cy):
     square(cx + 60, cy - 60, s, BLUE, "navy")
 
 
+# главная функция программы: рисует из орнаментов сетку 3х3
 def main():
     turtle.speed(0)
     turtle.hideturtle()
