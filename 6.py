@@ -1,3 +1,4 @@
+# объявляем функцию, принимающую строку - текст сообщения
 def check_sms(message):
     if len(message) < 160:
         return message
