@@ -1,3 +1,4 @@
+# объявляем функцию, принимающую 1 строку - дата и время
 def convert_datetime(dt_string):
     parts = dt_string.split(" ")
     if len(parts) != 2:
