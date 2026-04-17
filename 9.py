@@ -1,3 +1,6 @@
+# Вычисляет количество секунд от начала года до указанной даты/времени
+# Формат входной строки: "DD/MM/YYYY HR:MIN:SEC"
+# Возвращает: целое число секунд
 def seconds_since_year_start(dt_string):
     parts = dt_string.split(" ")
     date_part, time_part = parts[0], parts[1]
