@@ -4,7 +4,7 @@ L = "lightblue"
 M = "skyblue"
 D = "steelblue"
 
-
+# рисует закрашенный треугольник по трем вершинам
 def triangle(x1, y1, x2, y2, x3, y3, color):
     turtle.up()
     turtle.goto(x1, y1)
@@ -19,6 +19,7 @@ def triangle(x1, y1, x2, y2, x3, y3, color):
     turtle.end_fill()
 
 
+# рисует квадратную плитку из двух тругольников
 def draw_tile(x, y, size, color1, color2, direction):
     if direction == "\\":
         triangle(x, y, x + size, y, x, y - size, color1)
@@ -28,6 +29,7 @@ def draw_tile(x, y, size, color1, color2, direction):
         triangle(x, y, x, y - size, x + size, y - size, color2)
 
 
+# рисует полный узор кафельной плитки 6×6
 def draw_pattern():
     size = 60
     start_x = -180
